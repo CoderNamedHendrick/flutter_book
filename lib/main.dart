@@ -8,6 +8,7 @@ import 'tasks/tasks.dart';
 import 'utils.dart' as utils;
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
   void startMeUp() async {
     final docsDir = await getApplicationDocumentsDirectory();
     utils.docsDir = docsDir;
