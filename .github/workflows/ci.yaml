@@ -53,4 +53,4 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
       - name: Build
-        run: flutter build apk
+        run: flutter build apk --no-sound-null-safety
