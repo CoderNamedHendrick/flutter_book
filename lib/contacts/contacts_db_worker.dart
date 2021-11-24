@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 import '../utils.dart' as utils;
@@ -23,9 +22,9 @@ class ContactsDBWorker {
       path,
       version: 1,
       onOpen: (db) {},
-      onCreate: (Database inDB, int inVersion) {
-        inDB.execute(
-          'CREATE TABLE IF NOT EXIST contacts (' +
+      onCreate: (Database inDB, int inVersion) async {
+        await inDB.execute(
+          'CREATE TABLE IF NOT EXISTS contacts (' +
               'id INTEGER PRIMARY KEY, ' +
               'name TEXT, ' +
               'email TEXT, ' +
@@ -54,7 +53,7 @@ class ContactsDBWorker {
         inContact.name,
         inContact.email,
         inContact.phone,
-        inContact.birthday,
+        inContact.birthday
       ],
     );
   }
