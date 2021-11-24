@@ -85,7 +85,11 @@ class ContactsEntry extends StatelessWidget {
                       source: ImageSource.camera,
                     );
                     if (cameraImage != null) {
-                      (cameraImage as File).copySync(
+                      if (File(join(utils.docsDir!.path, 'avatar'))
+                          .existsSync()) {
+                        File(join(utils.docsDir!.path, 'avatar')).deleteSync();
+                      }
+                      File(cameraImage.path).copySync(
                         join(utils.docsDir!.path, 'avatar'),
                       );
                       contactsModel.triggerRebuild();
@@ -100,7 +104,11 @@ class ContactsEntry extends StatelessWidget {
                       source: ImageSource.gallery,
                     );
                     if (galleryImage != null) {
-                      (galleryImage as File).copySync(
+                      if (File(join(utils.docsDir!.path, 'avatar'))
+                          .existsSync()) {
+                        File(join(utils.docsDir!.path, 'avatar')).deleteSync();
+                      }
+                      File(galleryImage.path).copySync(
                         join(utils.docsDir!.path, 'avatar'),
                       );
                       contactsModel.triggerRebuild();
@@ -170,7 +178,15 @@ class ContactsEntry extends StatelessWidget {
                 children: [
                   ListTile(
                     title: avatarFile.existsSync()
-                        ? Image.file(avatarFile)
+                        ? CircleAvatar(
+                            backgroundImage: FileImage(
+                              avatarFile,
+                            ),
+                            backgroundColor: Colors.indigoAccent,
+                            foregroundColor: Colors.white,
+                            minRadius: 64,
+                            maxRadius: 64,
+                          )
                         : const Text('No avatar image for this contact'),
                     trailing: IconButton(
                       onPressed: () => _selectAvatar(inContext),

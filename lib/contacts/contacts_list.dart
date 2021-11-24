@@ -107,7 +107,7 @@ class ContactsList extends StatelessWidget {
                           child: avatarFileExists
                               ? null
                               : Text(
-                                  contact.name!.subString(0, 1).toUpperCase(),
+                                  contact.name!.substring(0, 1).toUpperCase(),
                                 ),
                         ),
                         title: Text('${contact.name}'),
