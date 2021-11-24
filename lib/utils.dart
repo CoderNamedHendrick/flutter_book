@@ -1,6 +1,5 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
-import 'package:path_provider/path_provider.dart';
 import 'package:intl/intl.dart';
 import 'basemodel.dart';
 
@@ -8,9 +7,9 @@ Directory? docsDir;
 
 Future selectDate(
     BuildContext inContext, BaseModel inModel, String? inDateString) async {
-  DateTime initialDate = DateTime.now();
+  var initialDate = DateTime.now();
   if (inDateString != null) {
-    List dateParts = inDateString.split(',');
+    final dateParts = inDateString.split(',');
     initialDate = DateTime(
       int.parse(dateParts[0]),
       int.parse(dateParts[1]),

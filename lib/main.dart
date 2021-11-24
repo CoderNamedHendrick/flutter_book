@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'dart:io';
 import 'package:path_provider/path_provider.dart';
 import 'appointments/appointments.dart';
 import 'contacts/contacts.dart';
@@ -53,10 +52,10 @@ class FlutterBook extends StatelessWidget {
           ),
           body: TabBarView(
             children: [
-              Appointments(),
-              Contacts(),
+              const Appointments(),
+              const Contacts(),
               Notes(),
-              Tasks(),
+              const Tasks(),
             ],
           ),
         ),
