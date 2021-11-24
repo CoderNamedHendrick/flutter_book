@@ -11,4 +11,6 @@ class Task {
       'complete:$completed}';
 }
 
+TaskModel tasksModel = TaskModel();
+
 class TaskModel extends BaseModel {}
