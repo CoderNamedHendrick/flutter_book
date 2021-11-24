@@ -11,7 +11,7 @@ class BaseModel extends Model {
     notifyListeners();
   }
 
-  void loadData(String inEntityType, dynamic inDatabse) async {
+  void loadData(String inEntityType, inDatabse) async {
     entityList = await inDatabse.getAll();
     notifyListeners();
   }
