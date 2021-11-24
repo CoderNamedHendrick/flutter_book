@@ -23,12 +23,14 @@ class NotesDBWorker {
       version: 1,
       onOpen: (db) {},
       onCreate: (Database inDB, int inVersion) async {
-        await inDB.execute('CREATE TABLE IF NOT EXISTS notes ('
-            'id INTEGER PRIMARY KEY,'
-            ' title TEXT,'
-            ' content TEXT,'
-            ' color TEXT'
-            ')');
+        await inDB.execute(
+          'CREATE TABLE IF NOT EXISTS notes ('
+          'id INTEGER PRIMARY KEY,'
+          ' title TEXT,'
+          ' content TEXT,'
+          ' color TEXT'
+          ')',
+        );
       },
     );
     return db;
