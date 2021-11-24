@@ -18,7 +18,7 @@ class Appointments extends StatelessWidget {
             index: inModel.stackIndex,
             children: [
               const AppointmentsList(),
-              AppointMentsEntry(),
+              AppointmentsEntry(),
             ],
           );
         },
