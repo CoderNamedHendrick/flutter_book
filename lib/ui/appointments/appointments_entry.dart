@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'appointments_db_worker.dart';
+import '../../repositories/repositories.dart' show AppointmentsDBWorker;
 import 'package:scoped_model/scoped_model.dart';
-import 'appointments_model.dart' show appointmentsModel, AppointmentsModel;
-import '../utils.dart' as utils;
+import '../../models/models.dart' show appointmentsModel, AppointmentsModel;
+import '../../utils.dart' as utils;
 
 class AppointmentsEntry extends StatelessWidget {
   AppointmentsEntry({Key? key}) : super(key: key) {

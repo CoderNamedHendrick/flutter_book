@@ -1,7 +1,7 @@
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 import '../utils.dart' as utils;
-import 'task_model.dart';
+import '../models/task_model.dart';
 
 class TasksDBWorker {
   TasksDBWorker._();

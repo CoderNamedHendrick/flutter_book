@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'appointments_entry.dart';
 import 'appointments_list.dart';
 import 'package:scoped_model/scoped_model.dart';
-import 'appointments_model.dart' show appointmentsModel, AppointmentsModel;
+import '../../models/models.dart' show appointmentsModel, AppointmentsModel;
 
 class Appointments extends StatelessWidget {
   const Appointments({Key? key}) : super(key: key);

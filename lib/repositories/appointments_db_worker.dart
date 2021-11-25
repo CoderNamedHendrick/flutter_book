@@ -1,6 +1,6 @@
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
-import 'appointments_model.dart';
+import '../models/appointments_model.dart';
 import '../utils.dart' as utils;
 
 class AppointmentsDBWorker {

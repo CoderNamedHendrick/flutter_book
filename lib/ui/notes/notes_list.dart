@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:scoped_model/scoped_model.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
-import 'notes_db_worker.dart';
-import 'notes_model.dart' show Note, NotesModel, notesModel;
+import '../../repositories/repositories.dart' show NotesDBWorker;
+import '../../models/models.dart' show Note, NotesModel, notesModel;
 
 class NotesList extends StatelessWidget {
   const NotesList({Key? key}) : super(key: key);

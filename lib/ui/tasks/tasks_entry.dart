@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:scoped_model/scoped_model.dart';
-import 'task_db_worker.dart';
-import 'task_model.dart' show TaskModel, tasksModel;
-import '../utils.dart' as utils;
+import '../../repositories/repositories.dart' show TasksDBWorker;
+import '../../models/models.dart' show TaskModel, tasksModel;
+import '../../utils.dart' as utils;
 
 class TasksEntry extends StatelessWidget {
   TasksEntry({Key? key}) : super(key: key) {

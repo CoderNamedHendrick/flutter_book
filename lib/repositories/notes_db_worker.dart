@@ -1,7 +1,7 @@
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
 import '../utils.dart' as utils;
-import 'notes_model.dart';
+import '../models/notes_model.dart';
 
 class NotesDBWorker {
   NotesDBWorker._();

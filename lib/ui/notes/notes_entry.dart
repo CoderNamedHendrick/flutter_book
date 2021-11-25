@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:scoped_model/scoped_model.dart';
-import 'notes_db_worker.dart';
-import 'notes_model.dart' show NotesModel, notesModel;
+import '../../repositories/repositories.dart' show NotesDBWorker;
+import '../../models/models.dart' show NotesModel, notesModel;
 
 class NotesEntry extends StatelessWidget {
   NotesEntry({Key? key}) : super(key: key) {

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:intl/intl.dart';
 import 'package:scoped_model/scoped_model.dart';
-import 'task_db_worker.dart';
-import 'task_model.dart' show TaskModel, Task, tasksModel;
+import '../../repositories/repositories.dart' show TasksDBWorker;
+import '../../models/models.dart' show TaskModel, Task, tasksModel;
 
 class TasksList extends StatelessWidget {
   const TasksList({Key? key}) : super(key: key);

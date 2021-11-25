@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-import 'appointments_db_worker.dart';
+import '../../repositories/repositories.dart' show AppointmentsDBWorker;
 import 'package:flutter_calendar_carousel/flutter_calendar_carousel.dart';
 import 'package:flutter_calendar_carousel/classes/event.dart';
 import 'package:flutter_calendar_carousel/classes/event_list.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:intl/intl.dart';
 import 'package:scoped_model/scoped_model.dart';
-import 'appointments_model.dart';
+import '../../models/models.dart'
+    show Appointment, AppointmentsModel, appointmentsModel;
 
 class AppointmentsList extends StatelessWidget {
   const AppointmentsList({Key? key}) : super(key: key);

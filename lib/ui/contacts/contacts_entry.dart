@@ -1,11 +1,11 @@
 import 'dart:io';
-import 'contacts_db_worker.dart';
+import '../../repositories/repositories.dart' show ContactsDBWorker;
 import 'package:image_picker/image_picker.dart';
 import 'package:path/path.dart';
 import 'package:flutter/material.dart';
 import 'package:scoped_model/scoped_model.dart';
-import '../utils.dart' as utils;
-import 'contacts_model.dart' show contactsModel, ContactsModel;
+import '../../utils.dart' as utils;
+import '../../models/models.dart' show contactsModel, ContactsModel;
 
 class ContactsEntry extends StatelessWidget {
   ContactsEntry({Key? key}) : super(key: key) {

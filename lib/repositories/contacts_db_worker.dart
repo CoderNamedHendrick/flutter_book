@@ -1,7 +1,7 @@
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 import '../utils.dart' as utils;
-import 'contacts_model.dart' show Contact;
+import '../models/contacts_model.dart' show Contact;
 
 class ContactsDBWorker {
   ContactsDBWorker._();

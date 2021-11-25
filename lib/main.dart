@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
+import 'ui/main_screens.dart';
 import 'package:path_provider/path_provider.dart';
-import 'appointments/appointments.dart';
-import 'contacts/contacts.dart';
-import 'notes/notes.dart';
-import 'tasks/tasks.dart';
 import 'utils.dart' as utils;
 
 void main() {

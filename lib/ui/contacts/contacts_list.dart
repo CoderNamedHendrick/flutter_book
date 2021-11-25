@@ -1,12 +1,12 @@
 import 'dart:io';
-import 'contacts_db_worker.dart';
+import '../../repositories/repositories.dart' show ContactsDBWorker;
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:intl/intl.dart';
 import 'package:path/path.dart';
 import 'package:flutter/material.dart';
 import 'package:scoped_model/scoped_model.dart';
-import 'contacts_model.dart';
-import '../utils.dart' as utils;
+import '../../models/models.dart' show ContactsModel, Contact, contactsModel;
+import '../../utils.dart' as utils;
 
 class ContactsList extends StatelessWidget {
   const ContactsList({Key? key}) : super(key: key);
