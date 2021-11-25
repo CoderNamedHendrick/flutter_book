@@ -5,6 +5,7 @@ import 'package:flutter_calendar_carousel/classes/event.dart';
 import 'package:flutter_calendar_carousel/classes/event_list.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:intl/intl.dart';
+// ignore: import_of_legacy_library_into_null_safe
 import 'package:scoped_model/scoped_model.dart';
 import '../../models/models.dart'
     show Appointment, AppointmentsModel, appointmentsModel;

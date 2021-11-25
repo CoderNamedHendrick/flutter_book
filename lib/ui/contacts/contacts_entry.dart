@@ -3,6 +3,7 @@ import '../../repositories/repositories.dart' show ContactsDBWorker;
 import 'package:image_picker/image_picker.dart';
 import 'package:path/path.dart';
 import 'package:flutter/material.dart';
+// ignore: import_of_legacy_library_into_null_safe
 import 'package:scoped_model/scoped_model.dart';
 import '../../utils.dart' as utils;
 import '../../models/models.dart' show contactsModel, ContactsModel;

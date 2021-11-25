@@ -4,6 +4,7 @@ import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:intl/intl.dart';
 import 'package:path/path.dart';
 import 'package:flutter/material.dart';
+// ignore: import_of_legacy_library_into_null_safe
 import 'package:scoped_model/scoped_model.dart';
 import '../../models/models.dart' show ContactsModel, Contact, contactsModel;
 import '../../utils.dart' as utils;

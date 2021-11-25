@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'contacts_entry.dart';
 import 'contacts_list.dart';
+// ignore: import_of_legacy_library_into_null_safe
 import 'package:scoped_model/scoped_model.dart';
 import '../../models/models.dart' show contactsModel, ContactsModel;
 

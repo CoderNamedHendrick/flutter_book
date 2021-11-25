@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../../repositories/repositories.dart' show AppointmentsDBWorker;
+// ignore: import_of_legacy_library_into_null_safe
 import 'package:scoped_model/scoped_model.dart';
 import '../../models/models.dart' show appointmentsModel, AppointmentsModel;
 import '../../utils.dart' as utils;

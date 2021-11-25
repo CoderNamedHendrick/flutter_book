@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:intl/intl.dart';
+// ignore: import_of_legacy_library_into_null_safe
 import 'package:scoped_model/scoped_model.dart';
 import '../../repositories/repositories.dart' show TasksDBWorker;
 import '../../models/models.dart' show TaskModel, Task, tasksModel;
@@ -89,6 +90,7 @@ class TasksList extends StatelessWidget {
                   ),
                   child: ListTile(
                     leading: Checkbox(
+                      // ignore: avoid_bool_literals_in_conditional_expressions
                       value: task.completed == 'true' ? true : false,
                       onChanged: (inValue) async {
                         task.completed = inValue.toString();
